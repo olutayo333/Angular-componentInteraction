@@ -1,0 +1,9 @@
+
+
+
+<h1 class="text-info text-center"> I am the Child </h1>
+<p> Message From Parent is: <b>{{msgFromParent}}</b> </p>
+
+<input type="text" placeholder="Message to parent" [(ngModel)]="msgToParent" (keyup)="sendMsgToParent()" class="mb-2 form-control">
+
+<!-- <app-parent [msgFromParent] = "messageToChild" > </app-parent> -->

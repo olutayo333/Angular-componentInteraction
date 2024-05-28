@@ -1,0 +1,9 @@
+<div class="row w-75 mx-auto shadow">
+    <h1 class="text-success display-3 text-center"> I am The Parent </h1>
+    <input type="text" class="form-control mb-3" placeholder="Message To Child" [(ngModel)]="messageToChild">
+    <p class="text-center"> Message from Child: {{msgFromChild}}</p>
+    <div class="row">
+        <app-child [msgFromParent] = "messageToChild" (emitMsgToParent)="recieveMsgFromChild($event)"> </app-child>
+    </div>
+    
+</div>
